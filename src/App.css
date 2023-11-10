@@ -1,0 +1,39 @@
+.table-section {
+  margin-bottom: 2rem;
+}
+
+.navigation ul {
+padding: 0;
+margin: 0;
+background: #ccc;
+
+}
+.navigation ul li {
+  list-style: none;
+}
+.navigation ul li a {
+  display: inline-flex;
+  margin: 48px 0;
+  background-color: #eff55c;
+  color: #333;
+  border-radius: 6px;
+  font-weight: 700;
+  padding: 8px;
+  text-decoration: none;
+
+}
+.right-aligned{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  background-color: #ededed;
+  
+}
+.right-aligned a{
+  color: #000;
+  background: #a3d9f4;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;  
+}

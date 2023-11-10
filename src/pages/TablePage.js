@@ -29,21 +29,18 @@ const TablePage = () => {
         <div>
             <h1>Table Page</h1>
             <div className="right-aligned">
-            <DownloadButton data={data} />
-
+                <DownloadButton data={data} />
             </div>
             <div className="table-section">
-
                 <Table columns={columns} data={data} />
             </div>
-            
             <nav className='navigation'>
-                <ul><li>
-                    <Link to="/" target='_blank' >View Chart Page in a new window </Link>
-
-                </li></ul>
+                <ul>
+                    <li>
+                        <Link to="/" target='_blank' >View Chart Page in a new window </Link>
+                    </li>
+                </ul>
             </nav>
-
         </div>
     );
 };
@@ -56,12 +53,10 @@ const DownloadButton = ({ data }) => {
         { label: 'Total', key: 'total' },
     ];
 
-
     return (
         <CSVLink data={data} headers={headers} filename={'table_data.csv'}>
             Download Data
         </CSVLink>
-        
     );
 };
 

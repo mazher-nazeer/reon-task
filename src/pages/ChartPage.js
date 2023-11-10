@@ -19,9 +19,6 @@ const ChartPage = ({ history }) => {
     const handleColorChange = (value) => setColor(value);
     const handleChartTypeChange = (value) => setChartType(value);
 
-    const handleSeeTable = () => {
-        history.push('/table');
-    };
 
     return (
         <div>
@@ -70,11 +67,13 @@ const ChartPage = ({ history }) => {
                 <p>Loading...</p>
             )}
             <nav className='navigation'>
-                <ul><li>
-                    <Link to="/table" target='_blank' >View Table Page in a new window</Link>
-
-                </li></ul>
-            </nav>        </div>
+                <ul>
+                    <li>
+                        <Link to="/table" target='_blank' >View Table Page in a new window</Link>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     );
 };
 
